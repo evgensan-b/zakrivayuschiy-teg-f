@@ -1,1 +1,6 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --accent-text-family: 'PressStart2P', sans-serif;
+  --content-text-family: 'Inter', sans-serif;
+  --card-text-weight: 410;
+  --card-title-weight: 715;
+}

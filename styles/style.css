@@ -82,6 +82,34 @@
   aspect-ratio: 1 / 1;
 }
 
+.card__image-grayscale {
+  filter: grayscale(0.7);
+}
+
+.card__image-saturate {
+  filter: saturate(3.5);
+}
+
+.card__image-hue-rotate {
+  filter: hue-rotate(25deg);
+}
+
+.card__image-invert {
+  filter: contrast(0.5) invert(1);
+}
+
+.card__image-sepia {
+  filter: sepia(1);
+}
+
+.card__image-blur {
+  filter: blur(10px);
+}
+
+.card__image-multiple-filter {
+  filter: saturate(1.5) invert(0.7) hue-rotate(260deg) blur(3px);
+}
+
 .card__image-label {
   position: absolute;
   inset-block-start: 25px;
@@ -213,3 +241,23 @@
   block-size: 38px;
   inline-size: clamp(16.312rem, 15.6078rem + 3.0047vw, 18.312rem);
 }
+
+.dialog-window[open] .button__text {
+  text-transform: uppercase;
+  line-height: 90%;
+}
+
+@media (width <= 375px) {
+  .save__button {
+    flex-direction: column;
+  }
+
+  .floppy-icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .dialog-window[open] {
+    padding-block: 40px;
+  }
+} 

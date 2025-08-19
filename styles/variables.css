@@ -7,6 +7,7 @@
                          repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
                          linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --container-width: clamp(375px, 260.56px + 30.52vw, 700px);
-  --heart-contour-color: #000;
   --card-image-label-outline: #fff;
+  --heart-contour-color: #000;
+  --animation-fill-color: #f00;
 }

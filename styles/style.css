@@ -71,6 +71,7 @@
   position: relative;
   border-block-start: 2px solid #000;
   border-block-end: 2px solid #000;
+  overflow: hidden;
 }
 
 .card__image {
@@ -169,6 +170,58 @@
   border: 2px solid #000;
 }
 
+.contour {
+  transition: fill 0.1s linear 0s;
+}
+
+.main-body {
+  transition: fill 0.3s linear 0s;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.sparks {
+  fill: var(--animation-fill-color);
+  opacity: 0;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s linear 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
+}
+
 .card__like-button {
   display: flex;
   justify-content: center;
@@ -264,6 +317,11 @@ button .floppy-icon {
   grid-column: span 2;
   block-size: 38px;
   inline-size: clamp(16.312rem, 15.6078rem + 3.0047vw, 18.312rem);
+}
+
+.dialog-window[open] .floppy-icon {
+  inline-size: 41px;
+  block-size: 41px;
 }
 
 .dialog-window[open] .button__text {

@@ -1,6 +1,6 @@
 :root {
-  --accent-text-family: 'PressStart2P', sans-serif;
-  --content-text-family: 'Inter', sans-serif;
+  --accent-text-family: 'PressStart2P';
+  --content-text-family: 'Inter';
   --card-text-weight: 410;
   --card-title-weight: 715;
   --background-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), 
@@ -8,6 +8,7 @@
                          linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --container-width: clamp(375px, 260.56px + 30.52vw, 700px);
   --card-image-label-outline: #fff;
-  --heart-contour-color: #000;
+  --accent-project-color: #000;
+  --heart-fill-color: #000;
   --animation-fill-color: #f00;
 }

@@ -171,7 +171,6 @@
 }
 
 .sparks {
-  fill: var(--animation-fill-color, #f00);
   opacity: 0;
 }
 
@@ -330,4 +329,4 @@ button .floppy-icon {
   .dialog-window[open] {
     padding-block: 40px;
   }
-} 
+}

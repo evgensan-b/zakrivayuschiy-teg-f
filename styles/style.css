@@ -134,15 +134,11 @@
 .card__button-container {
   display: flex;
   justify-content: end;
-  gap: 6px;
+  gap: 4px;
 }
 
 .card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
-  inline-size: 38px;
   block-size: 38px;
   background-color: transparent;
   border: 2px solid transparent;
@@ -214,7 +210,6 @@
   justify-content: center;
   align-items: center;
   border: 2px solid var(--accent-project-color, #000);
-  background-color: transparent;
   inline-size: 130px;
   block-size: 38px;
 }
@@ -222,6 +217,7 @@
 .button {
   position: relative;
   border: 2px solid var(--accent-project-color, #000);
+  background-color: #fff;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
@@ -285,7 +281,8 @@ button .floppy-icon {
   padding: 30px;
   align-items: center;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  block-size: 191px;
+  /* block-size: 191px; */
+  border: 2px solid var(--accent-project-color, #000);
   overflow: hidden;
 }
 
@@ -303,7 +300,7 @@ button .floppy-icon {
 .dialog_button {
   grid-column: span 2;
   block-size: 38px;
-  inline-size: clamp(16.312rem, 15.6078rem + 3.0047vw, 18.312rem);
+  inline-size: 100%;
 }
 
 .dialog-window[open] .floppy-icon {
@@ -327,6 +324,6 @@ button .floppy-icon {
   }
 
   .dialog-window[open] {
-    padding-block: 40px;
+    padding-inline: 38px;
   }
 }
